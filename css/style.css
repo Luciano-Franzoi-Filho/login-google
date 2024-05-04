@@ -1,0 +1,10 @@
+/* Estilo para o site todo*/
+.site {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    width: 100vw; /* ocupa 100% da  largura da viewport */
+}

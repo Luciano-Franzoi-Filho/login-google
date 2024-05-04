@@ -1,0 +1,302 @@
+/* Reset de estilos */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:content-box;
+}
+
+/* Estilo para o site todo*/
+.site {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    width: 100vw; /* ocupa 100% da  largura da viewport */
+}
+
+/* Estilo para o corpo do conteúdo */
+.conteudo {
+    padding: 40px ;
+    background: #fcfbfbe9;
+    border-radius: 30px;
+    width:  840px; /* Defina a largura desejada */
+    height: 300px; /* Define a altura do conteudo */
+    margin: 0 auto; /* Centralize horizontalmente */
+}
+
+.direita{
+    display: inline-block;
+    width: 59%;
+}
+
+.esquerda{
+    display: inline-block;
+    width: 40%;
+}
+
+
+.secao_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.secao_direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 5%; /* largura desejada */
+    height: auto; /* altura automática para manter a proporção */
+    margin-bottom: 10px;
+}
+
+/* Estilo para o título "Fazer login" */
+.fazer_login p {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o texto "Use sua Conta do Google" */
+.use_conta p {
+    font-size: 13px;
+    color: #333;
+}
+
+.login_input{
+    position: relative;
+}
+
+/* Estilo para os campos de entrada*/
+
+.login_input input {
+    width: 200%;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1px rgba(93, 90, 90, 0.5);
+    border-radius: 4px;
+    font-size: 15px;
+    border-color: rgb(16, 47, 199); /* Adiciona a cor da borda vermelha */
+}
+
+
+.login_input textarea{
+    width:  100%;
+    outline: none;
+    resize: none;
+    border-radius: 3px;
+    border: solid 1px rgba(159, 159, 159, 0.5);
+}
+
+.login_input span{
+    position:absolute;
+    left: 5px;
+    top: 16px;  
+    pointer-events: none;
+    transition: 0.2s;
+    color: #666;
+    text-align: center;
+    background-color: #fff;
+    border: 0;
+    padding: 5px;
+    outline: 0;
+}
+
+.login_input input:focus ~ span,
+.login_input textarea:focus ~ span,
+.login_input input:valid ~ span,
+.login_input textarea:valid ~ span
+{
+    transform: translatey(-27px);
+    font-size: 10px;
+    color: #2a5db0;
+}
+
+.login_input input:focus {
+    box-shadow: 0 0 0 1.5px rgb(16, 78, 212);
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Estilo para o link "Esqueceu seu e-mail?" */
+.esqueceu_email {
+    font-size: 14px;
+    color: #4285f4;
+    text-decoration: solid;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-weight: 550;
+}
+
+.texto_sugestao{
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilo para o link "Saiba mais sobre como usar o Modo visitante" */
+.saiba_mais {
+    color: #4285f4;
+    text-decoration: solid;
+    cursor: pointer;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.botoes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilo para o botão "Criar conta" */
+.criar_conta label {
+    width: 100px; /* Fazendo o botão ocupar metade do espaço com um pequeno espaço entre eles */
+    height: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; /* Removendo o fundo */
+    color: #4285f4; /* Definindo a cor do texto */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 550;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.criar_conta label:hover {
+    color: #394bcd; /* Alterando a cor do texto quando passar o mouse */
+}
+
+.criar_conta label:focus {
+    background-color: rgb(143, 187, 230);
+}
+
+/* Estilo para o botão "Avançar" */
+.avancar button {
+    width: 85px; /* Fazendo o botão ocupar metade do espaço com um pequeno espaço entre eles */
+    height:  20px;
+    padding: 10px;
+    background-color: rgba(8, 8, 193, 0.849);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.avancar button:hover {
+    background-color:  rgb(13, 13, 143, 0.849); /* Alterando a cor de fundo quando passar o mouse */
+}
+
+.botao-link {
+    cursor: pointer;
+    font-size: 14px;
+    color: #4285f4;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+/* Estilo para o rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: transparent;
+    color: #666;
+    font-size: 11.5px;
+}
+
+/* Estilo para a div de seleção de idioma */
+.idioma {
+    display: flex;
+}
+
+.idioma .seta {
+    margin-left: 50px; /* Adiciona um pequeno espaço entre o texto e a seta */
+    cursor: pointer;
+}
+
+
+.opcoes {
+    display: flex;
+    align-items: flex-end; /* Ajusta os itens à direita */
+    gap: 30px; /* Espaçamento entre as opções */
+}
+
+/* Estilo para as opções de ajuda, privacidade e termos */
+.opcoes a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #666;
+}
+
+.opcao_idioma{
+    cursor: pointer;
+}
+
+.opcao {
+    cursor: pointer;
+}
+
+/* Estilo para o menu suspenso */
+.opcoes-menu {
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.366);
+    padding: 13px; /* Adiciona margem interna maior */
+    font-size: 15px; /* Define tamanho de fonte menor */
+    color: #060606; /* Define cor do texto */
+    display: none; /* Oculta o menu por padrão */
+    border-radius: 15px;
+}
+
+/* Estilo para mostrar o menu suspenso quando o checkbox é marcado */
+#opcoes-menu-toggle:checked + label + .opcoes-menu {
+    display: block;
+}
+
+/* Estilo para as opções do menu */
+.opcoes-menu a {
+    display: block;
+    cursor: pointer;
+    padding: 13px 13px; /* Ajusta o espaçamento vertical */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: background-color 0.3s ease;
+    color: inherit; /* Usa a cor de texto padrão */
+}
+
+/* Estilo para as opções do menu quando hover */
+.opcoes-menu .opcao:hover {
+    background-color: #a59e9e5d;
+    border-radius: 5px;
+}
+
+/* Estilo para ocultar o checkbox */
+#opcoes-menu-toggle {
+    display: none;
+}
+
+/* Estilo para posicionar o checkbox */
+#opcoes-menu-toggle {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+/* Estilo para mostrar o menu suspenso quando o checkbox é marcado */
+#opcoes-menu-toggle:checked + label + .opcoes-menu {
+    display: block;
+}
+
+/* Estilo para ocultar o menu suspenso quando o checkbox não está marcado */
+#opcoes-menu-toggle:not(:checked) + label + .opcoes-menu {
+    display: none;
+}
